@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Already Exist - Add Songs</title>
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Already Exist</h3>
+        <br/><br/>
+        <h2>You Can Add More Songs</h2>
+        <br/>
+        <form action="/addsongs" method="post">
+
+            <div class="form-group">
+                <label for="songName">Song Name :</label>
+                <input type="text" class="form-control" placeholder="Enter the song name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="songArtist">Song Artist :</label>
+                <input type="text" class="form-control" placeholder="Enter the artist name" name="artist" required>
+            </div>
+
+            <div class="form-group">
+                <label for="songGenre">Song Genre :</label>
+                <input type="text" class="form-control" placeholder="Enter the genre name" name="genre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="songLink">Song Link :</label>
+                <input type="text" class="form-control" placeholder="Enter the link name" name="link" required>
+            </div>
+
+            <input type="submit" class="btn btn-primary" value="ADD SONGS">
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

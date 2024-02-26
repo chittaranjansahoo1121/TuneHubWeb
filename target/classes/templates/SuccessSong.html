@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success - Add More Songs</title>
+    <!-- Bootstrap 5 CSS Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-success">Song Added Successfully</h1>
+        <br/><br/>
+        <h2>Add More Songs</h2>
+        <br/>
+        <form action="/addsongs" method="post">
+
+            <div class="mb-3">
+                <label for="name" class="form-label">Song Name :</label>
+                <input type="text" class="form-control" placeholder="Enter the song name" name="name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="artist" class="form-label">Song Artist :</label>
+                <input type="text" class="form-control" placeholder="Enter the artist name" name="artist" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="genre" class="form-label">Song Genre :</label>
+                <input type="text" class="form-control" placeholder="Enter the genre name" name="genre" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="link" class="form-label">Song Link :</label>
+                <input type="text" class="form-control" placeholder="Enter the link name" name="link" required>
+            </div>
+
+            <input type="submit" class="btn btn-primary" value="ADD SONGS">
+        </form>
+    </div>
+
+    <!-- Bootstrap 5 JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
